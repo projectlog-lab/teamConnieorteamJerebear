@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Summer I Turned Pretty Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>🌞 The Summer I Turned Pretty Quiz</h1>
+
+  <div id="start-screen">
+    <button onclick="startQuiz()">Start Quiz</button>
+  </div>
+
+  <div id="quiz-screen" style="display: none;">
+    <p id="question-text"></p>
+    <button class="option-btn" onclick="chooseAnswer('a1')" id="btn-a1"></button><br><br>
+    <button class="option-btn" onclick="chooseAnswer('a2')" id="btn-a2"></button><br><br>
+    <button onclick="nextQuestion()" id="next-btn" style="display: none;">Next</button>
+  </div>
+
+  <div id="result-screen" style="display: none;">
+    <h2 id="result-text"></h2>
+    <button onclick="retakeQuiz()">Retake Quiz</button>
+  </div>
+
+  <!-- JS should be at the bottom -->
+  <script src="script.js"></script>
+</body>
+</html>
+
